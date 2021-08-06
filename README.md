@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+## Getting Start
+1. 서버를 먼저 실행합니다. [Server Repository](https://github.com/DevWhkang/todolist-server) (서버 실행 방법은 Server Repository에 README.md에 있습니다.)
+2. 프로젝트를 클론합니다. `git clone git@github.com:DevWhkang/todolist-client.git`
+3. 해당 프로젝트 폴더로 이동하여 터미널 혹은 VScode에서 `npm run start` 명령어를 실행합니다.
+4. 브라우저를 열고 `http://localhost:3000`에 접속합니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Usage
+### Demo
+[Link](https://bit.ly/3kE79ai)
+### Screenshot
+![스크린샷 2021-08-06 오후 11 15 15](https://user-images.githubusercontent.com/56540563/128523828-3632a0f1-343e-4a28-a821-cc37c427fc8a.png)
 
-## Available Scripts
+### 1. Todo 필터 및 검색
+- 탭은 3가지로 구성되어 있습니다. 모든 Todo, 미완료 Todo, 완료 Todo 각 탭을 클릭하면 탭 이름에 맞게 필터링 됩니다.
+- 검색창에 키워드를 입력하여 Todo를 검색할 수 있습니다.
+- 검색시 선택된 탭에서 검색됩니다.
 
-In the project directory, you can run:
+### 2. Todo 생성
+- 우측 상단 플러스 버튼 클릭 -> Todo Text 작성 및 Refence Todo ID를 선택 후 생성 버튼을 누르면 Todo가 생성됩니다. (최초 Todo는 Reference 목록이 없음)
 
-### `npm start`
+### 3. Todo 삭제
+- Todo 목록에서 각 Todo 가장 우측에 휴지통 아이콘이 있습니다. 클릭시 삭제 여부를 확인합니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 4. Todo 수정
+- Todo 목록에서 각 Todo 우측 휴지통 아이콘 왼쪽에 연필 아이콘이 있습니다. 클릭시 Todo 생성시와 유사한 Todo 편집이 활성화 됩니다.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 5. Todo 완료 및 미완료
+- Todo 목록에서 각 Todo 가장 왼쪽에 체크박스가 있습니다. 체크박스 체크시 해당 Todo Text가 최소선이 그어지며 완료됩니다. 
+- 반대로 완료된 Todo를 다시 미완료 할 수 있습니다.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 체크박스 비활성화:
+  - 어떤 Todo가 참조하는 Reference Todo들 중에서 완료되지 않은 Todo가 있으면 해당 Todo는 완료 할 수 없습니다. 이때 체크박스 비활성화 됩니다.
+    즉, 참조하고 있는 Reference Todo가 모두 완료 되어야 해당 Todo를 완료할 수 있습니다.
