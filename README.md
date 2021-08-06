@@ -1,8 +1,9 @@
 ## Getting Start
 1. 서버를 먼저 실행합니다. [Server Repository](https://github.com/DevWhkang/todolist-server) (서버 실행 방법은 Server Repository에 README.md에 있습니다.)
 2. 프로젝트를 클론합니다. `git clone git@github.com:DevWhkang/todolist-client.git`
-3. 해당 프로젝트 폴더로 이동하여 터미널 혹은 VScode에서 `npm run start` 명령어를 실행합니다.
-4. 브라우저를 열고 `http://localhost:3000`에 접속합니다.
+3. 터미널에서 해당 프로젝트 폴더로 이동합니다. -> 의존성 패키지 설치를 위해 `npm install` 명령어를 실행합니다.
+4. 프로젝트 루트 폴더에서 `npm run start` 명령어를 실행합니다.
+5. 브라우저를 열고 `http://localhost:3000`에 접속합니다.
 
 ## Usage
 
