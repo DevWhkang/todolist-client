@@ -1,3 +1,4 @@
+
 ## Getting Start
 1. 서버를 먼저 실행합니다. [Server Repository](https://github.com/DevWhkang/todolist-server) (서버 실행 방법은 Server Repository에 README.md에 있습니다.)
 2. 프로젝트를 클론합니다. `git clone git@github.com:DevWhkang/todolist-client.git`
@@ -9,6 +10,8 @@
 
 ### Screenshot
 ![스크린샷 2021-08-06 오후 11 15 15](https://user-images.githubusercontent.com/56540563/128523828-3632a0f1-343e-4a28-a821-cc37c427fc8a.png)
+
+![스크린샷 2021-08-07 오전 12 05 40](https://user-images.githubusercontent.com/56540563/128531464-5fd1e7f1-20d2-487e-a8a7-697be9ebe28d.png)
 
 ### 1. Todo 필터 및 검색
 - 탭은 3가지로 구성되어 있습니다. 모든 Todo, 미완료 Todo, 완료 Todo 각 탭을 클릭하면 탭 이름에 맞게 필터링 됩니다.
