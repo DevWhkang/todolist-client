@@ -5,8 +5,7 @@
 4. 브라우저를 열고 `http://localhost:3000`에 접속합니다.
 
 ## Usage
-### Demo
-[Link](https://bit.ly/3kE79ai)
+
 ### Screenshot
 ![스크린샷 2021-08-06 오후 11 15 15](https://user-images.githubusercontent.com/56540563/128523828-3632a0f1-343e-4a28-a821-cc37c427fc8a.png)
 
